@@ -6,37 +6,53 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #202124;
+    flex-direction: column;
 }
 
+/* Form holds everything vertically */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Search box */
-input[type="text"] {
+/* Search container wraps input and icon */
+.search-container {
+    position: relative;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
     color: white;
     background-color: #454646;
     font-size: 16px;
-    padding: 10px;
-    width: 400px;
-    margin-bottom: 20px;
+    padding: 10px 40px;
+    width: 100%;
     border: 1px solid #585a5a;
     border-radius: 24px;
     outline: none;
-    text-align: center;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #b3b3b3;
+    pointer-events: none;
 }
 
 /* Button container */
 .buttons {
     display: flex;
     gap: 15px;
+    margin-top: 10px;
 }
 
 /* Buttons */
 input[type="submit"] {
-    font-size: 14px;
+    font-size: 10px;
     padding: 10px 20px;
     border: none;
     background-color: #353636;
