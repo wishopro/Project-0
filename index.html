@@ -8,11 +8,13 @@
 
     <body>
 
-        <form>
-            <input id="text" type="text" placeholder="CS50 is cool">
-            <input type="submit" value="Google Search">
+        <form action="https://www.google.com/search">
+            <input id="text" type="text" name="q">
+            <div class="buttons">
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm Feeling Lucky" formaction="https://www.google.com/search" formmethod="get" name="btnI">
+            </div>
         </form>
 
     </body>
-
 </html>
