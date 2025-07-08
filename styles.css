@@ -67,3 +67,18 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #454646;
 }
+
+.logo {
+    font-family: 'Product Sans', Arial, sans-serif;
+    font-size: 150px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: -2px;
+}
+
+.g1 { color: #4285F4; }  /* blue */
+.a1 { color: #EA4335; }  /* red */
+.a2 { color: #FBBC05; }  /* yellow */
+.g2 { color: #4285F4; }  /* blue */
+.l  { color: #34A853; }  /* green */
+.e  { color: #EA4335; }  /* red */
