@@ -1,44 +1,53 @@
-/* Center the form vertically and horizontally */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #202124;
 }
 
-/* Keep the form inline */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Style the input box */
+/* Search box */
 input[type="text"] {
+    color: white;
+    background-color: #454646;
     font-size: 16px;
     padding: 10px;
     width: 400px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #585a5a;
     border-radius: 24px;
     outline: none;
     text-align: center;
 }
 
-/* Style the submit button */
+/* Button container */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Buttons */
 input[type="submit"] {
     font-size: 14px;
     padding: 10px 20px;
     border: none;
-    background-color: #f8f9fa;
+    background-color: #353636;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(182, 176, 176, 0.1);
     transition: background-color 0.2s ease-in-out;
+    color: white;
+    border: 1px solid #585a5a;
 }
 
 input[type="submit"]:hover {
-    background-color: #e8e8e8;
+    background-color: #454646;
 }
