@@ -5,31 +5,36 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
+        
         <title>My Project 0 Webpage</title>
     </head>
 
     <body>
-    <div class="top-right">
-        <a href="#" onclick="loadSection('main')">Home</a>
-        <a href="#" onclick="loadSection('images')">Image Search</a>
-        <a href="#" onclick="loadSection('advanced')">Advanced Search</a>
-    </div>
+  <div class="top-right">
+    <a href="#" onclick="loadSection('main')">Home</a>
+    <a href="#" onclick="loadSection('images')">Image Search</a>
+    <a href="#" onclick="loadSection('advanced')">Advanced Search</a>
+  </div>
 
+  <div id="content">
     <h1 class="logo">
-        <span class="g1">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span>
+      <span class="g1">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span>
     </h1>
 
     <form action="https://www.google.com/search">
-        <div class="search-container">
-            <i class="fas fa-search search-icon"></i>
-            <input type="text" name="q">
-        </div>
-        <div class="buttons">
-            <input type="submit" value="Google Search">
-            <input type="submit" name="btnI" value="I'm Feeling Lucky">
-        </div>
+      <div class="search-container">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" name="q">
+      </div>
+      <div class="buttons">
+        <input type="submit" value="Google Search">
+        <input type="submit" name="btnI" value="I'm Feeling Lucky">
+      </div>
     </form>
-    </body>
+  </div>
 
+  <script src="script.js"></script>
+</body>
+
+    <script src="script.js"></script>
 </html>
