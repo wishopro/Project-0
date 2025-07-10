@@ -1,84 +1,89 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #202124;
-    flex-direction: column;
 }
 
-/* Form holds everything vertically */
+/* Logo stays at the top */
+.logo {
+    font-family: 'Product Sans', Arial, sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+    margin-top: 200px;
+    margin-bottom: 35px;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+/* This part gets centered */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 300px); /* subtract height of logo area */
+}
+
+/* Form and search bar styling remains the same */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Search container wraps input and icon */
 .search-container {
     position: relative;
-    width: 400px;
-    margin-bottom: 20px;
+    width: 560px;
+    height: 44px;
+    margin-bottom: 30px;
 }
 
 .search-container input[type="text"] {
-    color: white;
-    background-color: #454646;
-    font-size: 16px;
-    padding: 10px 40px;
     width: 100%;
-    border: 2px solid #585a5a;
+    height: 113%;
+    font-size: 16px;
+    padding: 0 44px;
     border-radius: 24px;
+    border: 1px solid #282929;
+    background-color: #56575e;
+    color: white;
     outline: none;
 }
 
 .search-icon {
     position: absolute;
-    top: 50%;
+    top: 56%;
     left: 15px;
     transform: translateY(-50%);
-    color: #b3b3b3;
+    color: #9aa0a6;
+    font-size: 14px;
     pointer-events: none;
 }
 
-/* Button container */
+.g1 { color: #4285F4; }
+.o1 { color: #EA4335; }
+.o2 { color: #FBBC05; }
+.g2 { color: #4285F4; }
+.l  { color: #34A853; }
+.e  { color: #EA4335; }
+
 .buttons {
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    gap: 10px;
 }
 
-/* Buttons */
 input[type="submit"] {
-    font-size: 10px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #353636;
+    background-color: #303134;
+    color: white;
+    border: 1px solid #282929;
+    font-size: 14px;
+    padding: 8px 20px;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0 1px 3px rgba(182, 176, 176, 0.1);
-    transition: background-color 0.2s ease-in-out;
-    color: white;
-    border: 1px solid #585a5a;
+    transition: background-color 0.2s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #454646;
+    background-color: #3c4043;
 }
 
-.logo {
-    font-family: 'Product Sans', Arial, sans-serif;
-    font-size: 150px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    letter-spacing: -2px;
-}
-
-.g1 { color: #4285F4; }  /* blue */
-.a1 { color: #EA4335; }  /* red */
-.a2 { color: #FBBC05; }  /* yellow */
-.g2 { color: #4285F4; }  /* blue */
-.l  { color: #34A853; }  /* green */
-.e  { color: #EA4335; }  /* red */
